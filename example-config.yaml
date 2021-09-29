@@ -1,0 +1,15 @@
+---
+chainId: 100 # platon主网链ID
+async: false # true异步操作，本地节点打包，出块时操作，gas费用为0 | false：同步操作，实时获取当前gasPrice操作
+rawURL: http://127.0.0.1:6789 # 节点连接地址
+arp: lat # lat或atp
+rewardBlock: 11000 # 结算周期到10000开始执行获取委托收益，可以默认不需要改动
+rewardGasLimit: 50000 # 领取委托收益gaslimit，可以默认不需要改动
+delegateBlock: 3000 # 结算周期到3000开始执行委节点，可以默认不需要改动
+delegateGasLimit: 50000 # 委托节点gaslimit，可以默认不需要改动
+minDelegate: 10 # 最小质押金额，默认alaya是1，platon是10，可自定义
+dstAddr: "" # 汇总地址，暂时未实现
+addrs:
+    - name: example #地址名称
+      privateKey: xx #地址私钥
+      nodeId: 0x24bd304f3f4f439ef9bb6f13c3ceea0c86579493850588b368ac49b9a3ba58105820d20b8c55afb808ea7c9feb5a8d7ccbf5304dd1c97e0bfa353ef5a40c7c73 #委托的节点
